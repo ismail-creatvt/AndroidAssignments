@@ -1,0 +1,92 @@
+[
+  {
+    "subject": "Java",
+    "question":"Java programs are",
+    "option1": "Faster than others",
+    "option2":"Platform independent",
+    "option3": "Not reusable",
+    "option4":"Not scalable",
+    "correctOptionIndex": 1
+  },
+  {
+    "subject": "Java",
+    "question":"Java has its origin in",
+    "option1": "C programming language",
+    "option2": "PERRL",
+    "option3": "COBOL",
+    "option4": "Oak programming language",
+    "correctOptionIndex": 3
+  },
+  {
+    "subject": "Java",
+    "question":"Which one of the following is true for Java",
+    "option1": "Java is object-oriented and interpreted",
+    "option2": "Java is efficient and faster than C",
+    "option3": "Java is the choice of everyone.",
+    "option4": "Java is not robust.",
+    "correctOptionIndex": 0
+  },
+  {
+    "subject": "Java",
+    "question":"The command javac is used to",
+    "option1": "debug a java program",
+    "option2": "compile a java program",
+    "option3": "interpret a java program",
+    "option4": "execute a java program",
+    "correctOptionIndex": 1
+  },
+  {
+    "subject": "Java",
+    "question":"Java servlets are an efficient and powerful solution for creating ………….. for the web.",
+    "option1": "Dynamic content",
+    "option2": "Static content",
+    "option3": "Hardware",
+    "option4": "Both a and b",
+    "correctOptionIndex": 0
+  },
+  {
+    "subject": "Java",
+    "question":"Which of these keywords is used to make a class?",
+    "option1": "class",
+    "option2": "struct",
+    "option3": "int",
+    "option4": "none of the mentioned",
+    "correctOptionIndex": 0
+  },
+  {
+    "subject": "Java",
+    "question":"Which of this keyword can be used in a subclass to call the constructor of superclass?",
+    "option1": "this",
+    "option2": "extent",
+    "option3": "super",
+    "option4": "extends",
+    "correctOptionIndex": 2
+  },
+  {
+    "subject": "Java",
+    "question":"What is the process of defining a method in a subclass having same name & type signature as a method in its superclass?",
+    "option1": "Method overloading",
+    "option2": "Method overriding",
+    "option3": "Method hiding",
+    "option4": "None of the mentioned",
+    "correctOptionIndex": 1
+  },
+  {
+    "subject": "Java",
+    "question":"Which of this method of class String is used to obtain a length of String object?",
+    "option1": "get()",
+    "option2": "Sizeof()",
+    "option3": "lengthof()",
+    "option4": "length()",
+    "correctOptionIndex": 3
+  },
+  {
+    "subject": "Java",
+    "question":"Which of these standard collection classes implements a dynamic array?",
+    "option1": "AbstractList",
+    "option2": "LinkedList",
+    "option3": "ArrayList",
+    "option4": "AbstractSet",
+    "correctOptionIndex": 2
+  }
+]

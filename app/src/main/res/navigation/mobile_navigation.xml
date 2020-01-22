@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/question_1">
+
+    <fragment
+        android:id="@+id/question_1"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question1Fragment"
+        android:label="@string/question_1"
+        tools:layout="@layout/fragment_question1" >
+        <action
+            android:id="@+id/action_question_1_to_question_2"
+            app:destination="@id/question_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/question_2"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question2Fragment"
+        android:label="@string/question_2"
+        tools:layout="@layout/fragment_question2" />
+    <fragment
+        android:id="@+id/question_3"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question3Fragment"
+        android:label="@string/question_3"
+        tools:layout="@layout/fragment_question3" />
+    <fragment
+        android:id="@+id/question_4"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question4Fragment"
+        android:label="@string/question_4"
+        tools:layout="@layout/fragment_question4" />
+    <fragment
+        android:id="@+id/question_5"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question5Fragment"
+        android:label="@string/question_5"
+        tools:layout="@layout/fragment_question5" />
+    <fragment
+        android:id="@+id/question_6"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question6Fragment"
+        android:label="@string/question_6"
+        tools:layout="@layout/fragment_question6" >
+        <action
+            android:id="@+id/action_question6Fragment_to_finalResultFragment"
+            app:destination="@id/finalResultFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@+id/question_1"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalResultFragment"
+        android:name="in.ed.poonacollege.androidassignments.fragments.FinalResultFragment"
+        android:label="@string/final_result"
+        tools:layout="@layout/fragment_final_result" >
+        <argument
+            android:name="correctAnswers"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="totalQuestions"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/question_7"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question7Fragment"
+        android:label="@string/question_7"
+        tools:layout="@layout/fragment_question7" />
+    <fragment
+        android:id="@+id/question_10"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question10Fragment"
+        android:label="@string/question_10"
+        tools:layout="@layout/fragment_question10" />
+    <fragment
+        android:id="@+id/question_8"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question8Fragment"
+        android:label="@string/question_8"
+        tools:layout="@layout/fragment_question8" />
+    <fragment
+        android:id="@+id/question_9"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question9Fragment"
+        android:label="@string/question_9"
+        tools:layout="@layout/fragment_question9" />
+    <fragment
+        android:id="@+id/question_11"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question11Fragment"
+        android:label="@string/question_11"
+        tools:layout="@layout/fragment_question11" />
+    <fragment
+        android:id="@+id/question_12"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question12Fragment"
+        android:label="@string/question_12"
+        tools:layout="@layout/fragment_question12" />
+    <fragment
+        android:id="@+id/question_13"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question13Fragment"
+        android:label="@string/question_13"
+        tools:layout="@layout/fragment_question13" />
+    <fragment
+        android:id="@+id/question_14"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question14Fragment"
+        android:label="@string/question_14"
+        tools:layout="@layout/fragment_question14" />
+</navigation>
