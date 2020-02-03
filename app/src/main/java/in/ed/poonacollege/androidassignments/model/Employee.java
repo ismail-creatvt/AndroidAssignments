@@ -1,5 +1,7 @@
 package in.ed.poonacollege.androidassignments.model;
 
+import androidx.annotation.NonNull;
+
 public class Employee {
 
     private int no;
@@ -67,5 +69,11 @@ public class Employee {
 
     public void setDno(int dno) {
         this.dno = dno;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return name;
     }
 }

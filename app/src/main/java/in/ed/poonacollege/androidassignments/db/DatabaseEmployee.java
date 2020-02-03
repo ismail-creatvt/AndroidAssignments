@@ -64,18 +64,18 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         employee.setName("Shahrukh Khan");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
-        employee.setDno(2);
+        employee.setAddress("Mumbai");
+        employee.setDno(1);
         employee.setNo(1);
-        insertEmployee(employee);
+        insertEmployee(db, employee);
 
         employee.setName("Chris Hemsworth");
         employee.setSalary(300000f);
         employee.setPhone("8493342983");
-        employee.setAddress("Asgard, Solar System, Milky Way Galaxy");
-        employee.setDno(3);
+        employee.setAddress("Los Angeles");
+        employee.setDno(1);
         employee.setNo(2);
-        insertEmployee(employee);
+        insertEmployee(db, employee);
 
         employee.setName("Robert Downey Jr.");
         employee.setSalary(500000f);
@@ -83,55 +83,55 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         employee.setAddress("Planet Mars, Solar System, Milky Way Galaxy");
         employee.setDno(1);
         employee.setNo(3);
-        insertEmployee(employee);
+        insertEmployee(db, employee);
 
-        employee.setName("Shahrukh Khan");
+        employee.setName("Salman Khan");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
+        employee.setAddress("Mumbai");
         employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
+        employee.setNo(4);
+        insertEmployee(db, employee);
 
-        employee.setName("Shahrukh Khan");
+        employee.setName("Shradha Kapoor");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
+        employee.setAddress("");
         employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
+        employee.setNo(5);
+        insertEmployee(db, employee);
 
-        employee.setName("Shahrukh Khan");
+        employee.setName("Scarlett Johansonn");
+        employee.setSalary(400000f);
+        employee.setPhone("8493423834");
+        employee.setAddress("California");
+        employee.setDno(2);
+        employee.setNo(6);
+        insertEmployee(db, employee);
+
+        employee.setName("Chris Evans");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
-        employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
+        employee.setAddress("Australia");
+        employee.setDno(3);
+        employee.setNo(7);
+        insertEmployee(db, employee);
 
-        employee.setName("Shahrukh Khan");
+        employee.setName("Will Smith");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
-        employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
+        employee.setAddress("South Africa");
+        employee.setDno(3);
+        employee.setNo(8);
+        insertEmployee(db, employee);
 
-        employee.setName("Shahrukh Khan");
+        employee.setName("Keanu Reeves");
         employee.setSalary(400000f);
         employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
-        employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
-
-        employee.setName("Shahrukh Khan");
-        employee.setSalary(400000f);
-        employee.setPhone("8493489834");
-        employee.setAddress("India, Asia, Planet Earth, Solar System, Milky Way Galaxy");
-        employee.setDno(2);
-        employee.setNo(1);
-        insertEmployee(employee);
+        employee.setAddress("Canada");
+        employee.setDno(3);
+        employee.setNo(9);
+        insertEmployee(db, employee);
     }
 
     private void insertDepartmentValues(SQLiteDatabase db) {
@@ -140,31 +140,28 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         department.setName("Computer Science");
         department.setNo(1);
         department.setLocation("Building no 12");
-        insertDepartment(department);
+        insertDepartment(db, department);
 
         department.setName("Biology");
         department.setNo(2);
         department.setLocation("Building no 14");
-        insertDepartment(department);
+        insertDepartment(db, department);
 
         department.setName("Chemistry");
         department.setNo(3);
         department.setLocation("Building no 2");
-        insertDepartment(department);
-
-        department.setName("Physics");
-        department.setNo(4);
-        department.setLocation("Building no 5");
-        insertDepartment(department);
+        insertDepartment(db, department);
 
     }
 
-    public void insertDepartment(Department department){
+    public void insertDepartment(SQLiteDatabase db, Department department){
+        if(db == null){
+            db = getWritableDatabase();
+        }
         ContentValues contentValues = new ContentValues();
         contentValues.put(DEPT_NO, department.getNo());
         contentValues.put(DEPT_NAME, department.getName());
         contentValues.put(DEPT_LOCATION, department.getLocation());
-        SQLiteDatabase db = getWritableDatabase();
         db.insert(DEPT_TABLE, null, contentValues);
     }
 
@@ -186,7 +183,10 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         return departments;
     }
 
-    public void insertEmployee(Employee employee){
+    public void insertEmployee(SQLiteDatabase db, Employee employee){
+        if(db == null){
+            db = getWritableDatabase();
+        }
         ContentValues contentValues = new ContentValues();
         contentValues.put(EMP_NO, employee.getNo());
         contentValues.put(EMP_NAME, employee.getName());
@@ -194,14 +194,13 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         contentValues.put(EMP_PHONE, employee.getPhone());
         contentValues.put(EMP_SALARY, employee.getSalary());
         contentValues.put(DNO, employee.getDno());
-        SQLiteDatabase db = getWritableDatabase();
         db.insert(EMP_TABLE, null, contentValues);
     }
 
-    public ArrayList<Employee> getAllEmployees(){
+    public ArrayList<Employee> getAllEmployees(int deptno){
         ArrayList<Employee> employees = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM " + EMP_TABLE,null);
+        Cursor cursor = db.rawQuery("SELECT * FROM " + EMP_TABLE + " where " + DNO + "= ?",new String[]{String.valueOf(deptno)});
 
         if(cursor != null && cursor.getCount() > 0){
             while(cursor.moveToNext()){
@@ -211,6 +210,7 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
                 employee.setAddress(cursor.getString(cursor.getColumnIndex(EMP_ADDRESS)));
                 employee.setPhone(cursor.getString(cursor.getColumnIndex(EMP_PHONE)));
                 employee.setSalary(cursor.getFloat(cursor.getColumnIndex(EMP_SALARY)));
+                employee.setDno(cursor.getInt(cursor.getColumnIndex(DNO)));
                 employees.add(employee);
             }
             cursor.close();
@@ -218,9 +218,9 @@ public class DatabaseEmployee extends SQLiteOpenHelper {
         return employees;
     }
 
-    public void deleteEmployee(int deptno){
+    public void deleteEmployee(int empno){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("delete from " + EMP_TABLE + " where " + DNO + " = " + deptno);
+        db.execSQL("delete from " + EMP_TABLE + " where " + EMP_NO + " = " + empno);
     }
 
     @Override

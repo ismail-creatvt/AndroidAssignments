@@ -100,4 +100,46 @@
         android:name="in.ed.poonacollege.androidassignments.fragments.Question14Fragment"
         android:label="@string/question_14"
         tools:layout="@layout/fragment_question14" />
+    <fragment
+        android:id="@+id/question_15"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question15Fragment"
+        android:label="@string/question_15"
+        tools:layout="@layout/fragment_question15" />
+    <fragment
+        android:id="@+id/question_16"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question16Fragment"
+        android:label="@string/question_16"
+        tools:layout="@layout/fragment_question16" />
+    <fragment
+        android:id="@+id/question_17"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question17Fragment"
+        android:label="@string/question_17"
+        tools:layout="@layout/fragment_question17" />
+
+    <fragment
+        android:id="@+id/question_19"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question19Fragment"
+        android:label="@string/question_19"
+        tools:layout="@layout/fragment_question19" />
+    <fragment
+        android:id="@+id/question_20"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question20Fragment"
+        android:label="@string/question_20"
+        tools:layout="@layout/fragment_question20" />
+    <fragment
+        android:id="@+id/question_21"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question21Fragment"
+        android:label="@string/question_21"
+        tools:layout="@layout/fragment_question21" />
+    <fragment
+        android:id="@+id/question_22"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question22Fragment"
+        android:label="@string/question_22"
+        tools:layout="@layout/fragment_question22" />
+
+    <fragment
+        android:id="@+id/question_23"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question23Fragment"
+        android:label="@string/question_23"
+        tools:layout="@layout/fragment_question23" />
 </navigation>

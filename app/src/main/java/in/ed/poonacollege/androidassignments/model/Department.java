@@ -1,5 +1,7 @@
 package in.ed.poonacollege.androidassignments.model;
 
+import androidx.annotation.NonNull;
+
 public class Department {
 
     private int no;
@@ -37,5 +39,11 @@ public class Department {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return name;
     }
 }

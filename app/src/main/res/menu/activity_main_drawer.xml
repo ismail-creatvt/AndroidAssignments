@@ -61,6 +61,39 @@
             android:id="@+id/question_14"
             android:icon="@drawable/question_icon"
             android:title="@string/question_14" />
+        <item
+            android:id="@+id/question_15"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_15" />
+        <item
+            android:id="@+id/question_16"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_16" />
+        <item
+            android:id="@+id/question_17"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_17" />
+        <item
+            android:id="@+id/question_19"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_19" />
+        <item
+            android:id="@+id/question_20"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_20" />
+
+        <item
+            android:id="@+id/question_21"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_21" />
+        <item
+            android:id="@+id/question_22"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_22" />
+        <item
+            android:id="@+id/question_23"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_23" />
     </group>
 
 </menu>

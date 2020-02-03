@@ -58,5 +58,18 @@
     <string name="question_13">Question 13</string>
     <string name="check_palindrome">Check Palindrome</string>
     <string name="question_14">Question 14</string>
+    <string name="question_15">Question 15</string>
+    <string name="calculate">Calculate</string>
+    <string name="question_16">Question 16</string>
+    <string name="transform">Transform</string>
+    <string name="question_17">Question 17</string>
+    <string name="question_19">Question 19</string>
+    <string name="click_me">Click Me!!</string>
+    <string name="yes">Yes</string>
+    <string name="question_20">Question 20</string>
+    <string name="no">No</string>
+    <string name="question_21">Question 21</string>
+    <string name="question_22">Question 22</string>
+    <string name="question_23">Question 23</string>
 
 </resources>

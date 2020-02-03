@@ -50,7 +50,6 @@ public class Question7Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_question7, container, false);
     }
 
@@ -64,7 +63,7 @@ public class Question7Fragment extends Fragment {
         }
 
         if(!isPermissionGranted()){
-            ActivityCompat.requestPermissions(getActivity(),new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_EXTERNAL_PERMISSION);
+            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_EXTERNAL_PERMISSION);
         }
         imageCategoryRecyclerview = view.findViewById(R.id.imageCategoryRecyclerview);
         imageCategoryRecyclerview.setAdapter(new ImageCategoryAdapter());

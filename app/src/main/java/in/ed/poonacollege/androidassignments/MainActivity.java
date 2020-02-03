@@ -1,14 +1,10 @@
 package in.ed.poonacollege.androidassignments;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
-import androidx.fragment.app.FragmentManager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -16,14 +12,8 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
 
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.view.Menu;
-
 import in.ed.poonacollege.androidassignments.fragments.Question1Fragment;
+import in.ed.poonacollege.androidassignments.model.Question;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,14 +35,16 @@ public class MainActivity extends AppCompatActivity {
                 R.id.question_4, R.id.question_5, R.id.question_6,
                 R.id.question_7, R.id.question_8, R.id.question_9,
                 R.id.question_10, R.id.question_11, R.id.question_12,
-                R.id.question_13, R.id.question_13)
+                R.id.question_13, R.id.question_14, R.id.question_15,
+                R.id.question_16, R.id.question_17, R.id.question_19,
+                R.id.question_20, R.id.question_21, R.id.question_22,
+                R.id.question_23)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        startActivity(new Intent(this, SecondActivity.class));
     }
 
     @Override
