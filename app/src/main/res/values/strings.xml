@@ -71,5 +71,23 @@
     <string name="question_21">Question 21</string>
     <string name="question_22">Question 22</string>
     <string name="question_23">Question 23</string>
+    <string name="question_24">Question 24</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="bold">Bold</string>
+    <string name="italic">Italic</string>
+    <string name="underline">Underline</string>
+    <string name="display">Display</string>
+    <string name="clear">Clear</string>
+    <string name="question_25">Question 25</string>
+    <string name="title_activity_question26">Map</string>
+    <string name="question_26">Question 26</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="satellite_view">Satellite View</string>
+    <string name="terrain_view">Terrain View</string>
+    <string name="normal_view">Normal View</string>
+    <string name="question_27">Question 27</string>
 
 </resources>

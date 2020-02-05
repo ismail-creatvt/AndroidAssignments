@@ -1,7 +1,11 @@
 package in.ed.poonacollege.androidassignments;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -11,9 +15,6 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
-
-import in.ed.poonacollege.androidassignments.fragments.Question1Fragment;
-import in.ed.poonacollege.androidassignments.model.Question;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.question_13, R.id.question_14, R.id.question_15,
                 R.id.question_16, R.id.question_17, R.id.question_19,
                 R.id.question_20, R.id.question_21, R.id.question_22,
-                R.id.question_23)
+                R.id.question_23, R.id.question_24, R.id.question_25,
+                R.id.question_26, R.id.question_27)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -94,6 +94,22 @@
             android:id="@+id/question_23"
             android:icon="@drawable/question_icon"
             android:title="@string/question_23" />
+        <item
+            android:id="@+id/question_24"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_24" />
+        <item
+            android:id="@+id/question_25"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_25" />
+        <item
+            android:id="@+id/question_26"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_26" />
+        <item
+            android:id="@+id/question_27"
+            android:icon="@drawable/question_icon"
+            android:title="@string/question_27" />
     </group>
 
 </menu>

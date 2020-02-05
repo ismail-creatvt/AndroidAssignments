@@ -142,4 +142,24 @@
         android:name="in.ed.poonacollege.androidassignments.fragments.Question23Fragment"
         android:label="@string/question_23"
         tools:layout="@layout/fragment_question23" />
+    <fragment
+        android:id="@+id/question_24"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question24Fragment"
+        android:label="@string/question_24"
+        tools:layout="@layout/fragment_question24" />
+    <fragment
+        android:id="@+id/question_25"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question25Fragment"
+        android:label="@string/question_25"
+        tools:layout="@layout/fragment_question25" />
+    <fragment
+        android:id="@+id/question_26"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question26Fragment"
+        android:label="@string/question_26"
+        tools:layout="@layout/fragment_question26" />
+    <fragment
+        android:id="@+id/question_27"
+        android:name="in.ed.poonacollege.androidassignments.fragments.Question27Fragment"
+        android:label="@string/question_27"
+        tools:layout="@layout/fragment_question27" />
 </navigation>

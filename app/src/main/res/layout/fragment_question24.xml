@@ -15,35 +15,49 @@
         android:padding="20dp">
 
         <EditText
-            android:id="@+id/subject"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Subject" />
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Subject"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Message" />
+            android:hint="Message"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
 
         <Button
             android:id="@+id/add_attachment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/colorAccent"
-            android:textColor="@android:color/white"
-            android:text="Add Attachment" />
+            android:text="Add Attachment"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/send_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:backgroundTint="@color/colorAccent"
-            android:textColor="@android:color/white"
-            android:text="Send Email" />
+            android:text="Send Email"
+            android:textColor="@android:color/white" />
+
     </LinearLayout>
 </LinearLayout>
